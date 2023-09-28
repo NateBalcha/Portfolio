@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Define custom CSS variables for colors and font */
 html {
   --body-clr: #f6f9fe;
   --primary-clr: #05555c;
@@ -13,6 +14,7 @@ html {
   font-family: "montserrat", sans-serif;
   font-size: 10px;
 }
+/* Define base styles for the body element */
 body {
   width: 100%;
   min-height: 100vh;
@@ -140,6 +142,7 @@ button.btn:hover {
   top: -10px;
   z-index: 1;
 }
+/* Style for various elements within the hero section */
 .hero .hero-text h3 {
   font-size: 20px;
   color: var(--primary-clr);
@@ -362,11 +365,17 @@ button.cv-btn:hover {
 
 .footer_title {
   color: #05555c;
+  margin-bottom: 7px;
 }
 .footer_info {
   margin-top: 10px;
 }
+.githubLink {
+  text-decoration: none;
+  color: black;
+}
 
+/* Media queries for responsive design */
 @media (max-width: 768px) {
   .navbar .menu-btn {
     display: block;
@@ -416,11 +425,13 @@ button.cv-btn:hover {
   .hero .hero-img img {
     opacity: 0.3;
   }
+
   .home .career-container {
     grid-template-columns: 1fr;
   }
 }
 
+/* Styles for screens with a max-width of 550px */
 @media (max-width: 550px) {
   .hero .hero-img {
     right: -200px;
@@ -515,26 +526,11 @@ button.cv-btn:hover {
   }
 }
 
+/* Media queries for responsive design */
 @media (max-width: 768px) {
-  /* .hero .hero-img {
-    max-width: 100%;
-    height: auto;
-    transform: none;
-    right: 0;
-    top: 0;
-    border-radius: 0;
-    overflow: visible;
-  } */
-
-  /* .hero .hero-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transform: none;
-    left: 0;
-    bottom: 0;
-    opacity: 1;
-  } */
+  .font {
+    padding-left: 20px;
+  }
 
   #intro {
     margin: 0;
